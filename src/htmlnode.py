@@ -24,7 +24,7 @@ class HTMLNode:
 
 
 class LeafNode(HTMLNode):
-    def __init__(self, tag, value, props = None):
+    def __init__(self, tag, value, props: dict[str, str] | None):
         self.tag = tag
         self.value = value
         self.props = props

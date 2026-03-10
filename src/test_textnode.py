@@ -60,7 +60,7 @@ class TestTextNode(unittest.TestCase):
     
     def test_unknown_type(self):
         with self.assertRaises(AttributeError):
-            TextNode("This is a text node", TextType.UNDERLINED)
+            TextNode("This is a text node", TextType.UNDERLINED) # type: ignore
 
 
 if __name__ == "__main__":
